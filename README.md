@@ -1,17 +1,39 @@
-# 🎓 EduClass – Educativa Indonesia
+# EduClass – Educativa Indonesia
 
 ### 📌 Deskripsi Utama
 
-EduClass adalah platform pembelajaran online yang berfokus pada **olah data, riset, dan pengembangan skill akademik maupun profesional**. Website ini dirancang dengan tampilan modern dan interaktif untuk membantu pengguna belajar secara lebih **praktis, terstruktur, dan fleksibel** tanpa bergantung pada pembelajaran konvensional.
+EduClass adalah platform pembelajaran online yang berfokus pada **olah data, riset, dan pengembangan skill akademik maupun profesional**. Dirancang dengan tampilan modern dan interaktif untuk membantu pengguna belajar secara lebih **praktis, terstruktur, dan fleksibel** tanpa bergantung pada pembelajaran konvensional.
 
-Melalui konsep **VIP Learning Class (VLC)**, pengguna dapat mengakses materi berupa video, modul, dan tools pendukung yang relevan dengan kebutuhan akademik seperti skripsi, tesis, hingga kebutuhan profesional.
+---
+
+## Live Preview
+
+> https://revanyangel.github.io/EduClass-Educativa/
+
+<div align="center">
+
+  <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <img src="assets/images/preview_1.png" width="250"/>
+    <img src="assets/images/preview_2.png" width="250"/>
+  </div>
+
+  <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <img src="assets/images/preview_3.png" width="250"/>
+    <img src="assets/images/preview_4.png" width="250"/>
+  </div>
+
+  <div>
+    <img src="assets/images/preview_5.png" width="250"/>
+  </div>
+
+</div>
 
 ---
 
 ### 🚀 Fitur Utama
 
-* **Responsive Navigation**
-  Navbar interaktif yang mendukung tampilan mobile dan desktop, dilengkapi wishlist dan cart counter.
+* **Navigation**
+  Navbar interaktif yang dilengkapi wishlist dan cart counter.
 
 * **Hero Section (Call-to-Action)**
   Tampilan awal yang menarik dengan CTA untuk mengarahkan user menjelajahi kursus.
