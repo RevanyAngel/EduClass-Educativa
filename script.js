@@ -1,3 +1,4 @@
+
 const toggle = document.querySelector('.nav__toggle')
 const menu = document.querySelector('.nav__menu')
 
@@ -198,3 +199,77 @@ document.addEventListener("keydown", e => {
 window.addEventListener("load", () => {
   setTimeout(openModal, 600);
 });
+
+const track = document.getElementById('track');
+const cards = Array.from(track.children);
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
+
+// CONFIG
+const cardWidth = 400; // Sama dengan --card-w di CSS
+const gap = 30; // Sama dengan --gap di CSS
+const totalStep = cardWidth + gap;
+
+// CLONING LOGIC: Duplikat awal ke akhir, akhir ke awal
+cards.forEach(card => {
+    const cloneFirst = card.cloneNode(true);
+    const cloneLast = card.cloneNode(true);
+    track.appendChild(cloneFirst);
+    track.insertBefore(cloneLast, track.firstChild);
+});
+
+const allCards = document.querySelectorAll('.card');
+let index = cards.length; // Mulai dari card asli pertama (setelah clone awal)
+let isTransitioning = false;
+
+function move(noAnim = false) {
+    if(noAnim) track.style.transition = 'none';
+    else track.style.transition = 'transform 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+    
+    const offset = - (index * totalStep) - (totalStep / 2);
+    track.style.transform = `translateX(${offset}px)`;
+
+    // Update active class
+    allCards.forEach((c, i) => {
+        c.classList.remove('active');
+        if(i === index) c.classList.add('active');
+    });
+}
+
+// JUMP LOGIC (The Secret Sauce for Infinite Loop)
+track.addEventListener('transitionend', () => {
+    isTransitioning = false;
+    if (index >= allCards.length - cards.length) {
+        index = cards.length;
+        move(true);
+    }
+    if (index < cards.length) {
+        index = allCards.length - (cards.length * 2) + index;
+        move(true);
+    }
+});
+
+nextBtn.addEventListener('click', () => {
+    if(isTransitioning) return;
+    isTransitioning = true;
+    index++;
+    move();
+});
+
+prevBtn.addEventListener('click', () => {
+    if(isTransitioning) return;
+    isTransitioning = true;
+    index--;
+    move();
+});
+
+// Auto Play
+setInterval(() => {
+    if(!isTransitioning) {
+        index++;
+        move();
+    }
+}, 4000);
+
+// Initial Position
+move(true);
