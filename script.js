@@ -206,11 +206,10 @@ const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
 
 // CONFIG
-const cardWidth = 400; // Sama dengan --card-w di CSS
-const gap = 30; // Sama dengan --gap di CSS
+const cardWidth = 400;
+const gap = 30;
 const totalStep = cardWidth + gap;
 
-// CLONING LOGIC: Duplikat awal ke akhir, akhir ke awal
 cards.forEach(card => {
     const cloneFirst = card.cloneNode(true);
     const cloneLast = card.cloneNode(true);
@@ -219,7 +218,7 @@ cards.forEach(card => {
 });
 
 const allCards = document.querySelectorAll('.card');
-let index = cards.length; // Mulai dari card asli pertama (setelah clone awal)
+let index = cards.length;
 let isTransitioning = false;
 
 function move(noAnim = false) {
@@ -229,14 +228,12 @@ function move(noAnim = false) {
     const offset = - (index * totalStep) - (totalStep / 2);
     track.style.transform = `translateX(${offset}px)`;
 
-    // Update active class
     allCards.forEach((c, i) => {
         c.classList.remove('active');
         if(i === index) c.classList.add('active');
     });
 }
 
-// JUMP LOGIC (The Secret Sauce for Infinite Loop)
 track.addEventListener('transitionend', () => {
     isTransitioning = false;
     if (index >= allCards.length - cards.length) {
@@ -263,7 +260,6 @@ prevBtn.addEventListener('click', () => {
     move();
 });
 
-// Auto Play
 setInterval(() => {
     if(!isTransitioning) {
         index++;
@@ -271,5 +267,4 @@ setInterval(() => {
     }
 }, 4000);
 
-// Initial Position
 move(true);
