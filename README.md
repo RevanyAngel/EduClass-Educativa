@@ -1,62 +1,47 @@
-# Educativa LMS Landing Page
+# 🎓 EduClass – Educativa Indonesia
 
-Sebuah Landing Page interaktif untuk platform **Learning Management System (LMS)** yang dirancang khusus untuk ekosistem **Educativa.id**. Proyek ini fokus pada desain responsif, interaksi dinamis, dan pengalaman pengguna yang modern bagi mahasiswa serta peneliti di Indonesia.
+### 📌 Deskripsi Utama
 
----
+EduClass adalah platform pembelajaran online yang berfokus pada **olah data, riset, dan pengembangan skill akademik maupun profesional**. Website ini dirancang dengan tampilan modern dan interaktif untuk membantu pengguna belajar secara lebih **praktis, terstruktur, dan fleksibel** tanpa bergantung pada pembelajaran konvensional.
 
-## Live Preview
-
-> https://revanyangel.github.io/LMS-Educativa/
-
-* **Desktop**
-<p align="center">
-  <img src="assets/images/preview_desktop.png" width="600">
-</p>
-
-* **Tablet**
-<p align="center">
-  <img src="assets/images/preview_tablet.png" width="400">
-</p>
-
-* **Mobile**
-<p align="center">
-  <img src="assets/images/preview_HP.png" width="200">
-</p>
-
-## Deskripsi Utama
-Membangun antarmuka landing page yang menarik dan fungsional untuk mendukung kebutuhan akademik, mencakup:
-* **Hero Section** yang informatif.
-* **Product List** dalam format grid yang responsif.
-* **Fitur Interaktif** pada Navbar dan kartu produk menggunakan JavaScript.
+Melalui konsep **VIP Learning Class (VLC)**, pengguna dapat mengakses materi berupa video, modul, dan tools pendukung yang relevan dengan kebutuhan akademik seperti skripsi, tesis, hingga kebutuhan profesional.
 
 ---
 
-## Fitur Utama
+### 🚀 Fitur Utama
 
-### 1. Navbar (Navigasi & Tracking)
-* **Logo & Menu:** Navigasi jelas yang mencakup Home, Courses, About, dan Contact.
-* **Badge Counter Dinamis:** Icon Wishlist dan Cart dilengkapi dengan badge angka yang bertambah secara real-time saat user berinteraksi dengan produk.
-* **Responsive Toggle:** Menu hamburger untuk tampilan mobile yang dioptimalkan.
+* **Responsive Navigation**
+  Navbar interaktif yang mendukung tampilan mobile dan desktop, dilengkapi wishlist dan cart counter.
 
-### 2. Hero Section
-* **Headline & Subheadline:** Pesan utama yang menonjolkan Educativa sebagai partner akademik #1 di Indonesia.
-* **Double CTA Button:** Tombol "Jelajahi Kursus" dan "Lihat Promo" untuk memudahkan navigasi user.
-* **Visual Modern:** Desain latar belakang menggunakan gradien radial yang estetik.
+* **Hero Section (Call-to-Action)**
+  Tampilan awal yang menarik dengan CTA untuk mengarahkan user menjelajahi kursus.
 
-### 3. Product List (Grid Layout)
-* **Render Dinamis:** Daftar kursus dihasilkan secara otomatis dari data JavaScript (Array of Objects).
-* **Informasi Lengkap:** Setiap kartu menampilkan gambar, durasi, jumlah materi, rating, serta perbandingan harga asli dan diskon.
-* **Efek Hover:** Animasi kartu yang terangkat (*lift-up*), bayangan yang menebal, dan efek zoom pada gambar saat di-hover.
+* **VLC Carousel (VIP Learning Class)**
+  Carousel berbasis Bootstrap yang menampilkan keunggulan utama kelas seperti:
 
-### 4. Interaksi JavaScript & UX
-* **Fly-to-Cart Animation:** Feedback visual berupa ikon yang "terbang" dari kartu menuju navbar saat tombol diklik.
-* **Persistence State:** Menggunakan `localStorage` untuk menyimpan data wishlist dan cart sehingga tidak hilang saat halaman di-refresh.
-* **Modal Promo Popup:** Muncul secara otomatis setelah halaman dimuat untuk menawarkan promosi khusus.
-* **Aksesibilitas Modal:** Dapat ditutup melalui tombol (X), klik pada overlay, maupun menekan tombol `Esc` pada keyboard.
+  * Belajar praktis
+  * Sertifikat resmi
+  * Penguasaan tools riset populer
+
+* **Poster Carousel (Custom Slider)**
+  Slider interaktif dengan efek scaling untuk menampilkan topik kursus populer.
+
+* **Accordion Informasi**
+  Menyajikan alasan memilih VLC dengan tampilan clean dan animasi smooth.
+
+* **Courses Grid**
+  Menampilkan daftar kursus dalam bentuk card modern dengan efek hover.
+
+* **Promo Modal**
+  Popup interaktif untuk menampilkan informasi promo kepada pengguna.
 
 ---
 
-## Teknologi yang Digunakan
-* **HTML5:** Struktur semantik untuk web yang standar.
-* **CSS3:** Layouting menggunakan Flexbox & Grid, CSS Variables, dan animasi transisi.
-* **Vanilla JavaScript (ES6+):** Manipulasi DOM, Event Handling, dan State Management sederhana.
+### 🛠️ Teknologi yang Digunakan
+
+* **HTML5** → Struktur utama website
+* **CSS3** → Styling, layout, dan animasi (Flexbox, Grid, CSS Variables)
+* **Bootstrap 5** → Komponen UI seperti carousel & accordion
+* **Vanilla JavaScript** → Interaktivitas (carousel custom, modal, dynamic content)
+
+---
