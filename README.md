@@ -13,17 +13,17 @@ EduClass adalah platform pembelajaran online yang berfokus pada **olah data, ris
 <div align="center">
 
   <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
-    <img src="assets/images/preview_1.png" width="400"/>
-    <img src="assets/images/preview_2.png" width="400"/>
+    <img src="assets/images/preview_1.png" width="350"/>
+    <img src="assets/images/preview_2.png" width="350"/>
   </div>
 
   <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
-    <img src="assets/images/preview_3.png" width="400"/>
-    <img src="assets/images/preview_4.png" width="400"/>
+    <img src="assets/images/preview_3.png" width="350"/>
+    <img src="assets/images/preview_4.png" width="350"/>
   </div>
 
   <div>
-    <img src="assets/images/preview_5.png" width="400"/>
+    <img src="assets/images/preview_5.png" width="350"/>
   </div>
 
 </div>
