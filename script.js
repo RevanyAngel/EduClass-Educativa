@@ -205,7 +205,6 @@ const cards = Array.from(track.children);
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
 
-// CONFIG
 const cardWidth = 400;
 const gap = 30;
 const totalStep = cardWidth + gap;
@@ -265,6 +264,6 @@ setInterval(() => {
         index++;
         move();
     }
-}, 4000);
+}, 3000);
 
 move(true);
